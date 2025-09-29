@@ -1,0 +1,159 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Corpo da página */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background: #0d1117; /* fundo escuro tipo terminal */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../imagens/fundo-tela.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+/* Container principal */
+.container {
+    width: 550px;
+    padding: 30px 3%;
+    background-color: #111827; /* container escuro */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.4s ease, transform 0.3s ease;  
+    /* Cria animação suave quando certas propriedades mudam:
+       - background-color: mudança de cor de fundo em 0.4s de forma suave
+       - transform: qualquer transformação (como translate ou scale) em 0.3s de forma suave */
+}
+
+.container:hover {
+    background-color: #1a1f2b;   /* muda a cor suavemente */
+    transform: translateY(-3px) scale(1.05); /* sobe e aumenta levemente */
+}
+
+/* Título */
+.container h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #00fff0; /* azul neon */
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+/* Imagem centralizada */
+.container img {
+    width: 20%;
+    display: block;
+    margin: 0 auto 25px auto;
+    border-radius: 50%;
+    border: 3px solid #00fff0; /* azul neon */
+}
+
+/* Formulário */
+.container form {
+    width: 100%;
+}
+
+
+
+/* Labels */
+.container form label {
+    font-size: 16px;
+    text-align: left;
+    color: #00ff99; /* verde neon */
+    
+    
+}
+
+/* Inputs */
+.container form input[type=text],
+.container form input[type=password],
+.container form input[type=email] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1.5px solid #00ff99; /* verde neon */
+    border-radius: 8px;
+    background-color: #0d1117;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 15px;   
+}
+
+/* Foco nos inputs */
+.container form input[type=text]:focus,
+.container form input[type=password]:focus {
+    border-color: #00fff0; /* azul neon */
+    outline: none;
+}
+
+/* Botão submit */
+.container form input[type=submit] {
+    width: 50%;
+    padding: 12px 0;
+    font-size: 18px;
+    margin: 20px auto;
+    display: block;
+    background-color: #00fff0; /* azul neon */
+    color: #111827;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+/* Hover no botão */
+.container form input[type=submit]:hover {
+    background-color: #00ccaa;   /* muda a cor suavemente */
+    transform: translateY(-3px) scale(1.05); /* sobe e aumenta levemente */
+}
+
+/* Links abaixo do botão */
+form .links {
+    text-align: center;
+    margin-top: 10px;
+}
+
+form .links a {
+    display: inline-block;
+    text-decoration: none;
+    color: #00fff0; /* azul neon */
+    font-size: 16px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+form .links a:hover {
+    color: #00ff99; /* verde neon */
+}
+
+/*PAGINA CADASTRAR*/
+.btn {
+    display: block;
+    width: 50%;
+    padding: 12px 0;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #00fff0;
+    color: #111827;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #00ccaa;/* muda a cor suavemente */
+    transform: translateY(-3px) scale(1.05);/* sobe e aumenta levemente */
+}
+/***/
